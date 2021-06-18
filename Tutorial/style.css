@@ -1,0 +1,38 @@
+body{
+	background: linear-gradient(to right, #6190E8, #A7BFE8);
+}
+
+h1{
+	font-family: 'Trebuchet MS', sans-serif;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.btn{
+	background-color: white;
+	width: 100px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid #e9effc;
+	color: #00b359;
+	transition: .5s;
+}
+.btn:hover{
+	background-color: #00b359;
+	border: 1px solid #00b359;
+	color: #e9effc;
+	border-radius: 0;
+}
+
+#btn{
+	color: #ff3333;
+	border: 1px solid #e9effc;
+}
+
+#btn:hover{
+	background-color: #ff3333;
+	border: 1px solid #ff3333;
+	color: #e9effc;
+	
+}
+
