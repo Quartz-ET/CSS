@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html id="login-register">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="core.css">
+	<link rel="stylesheet" type="text/css" href="list.css">
+	<link rel="stylesheet" type="text/css" href="LR.css">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body id="login-register">
+	<div class="container-top-log-reg">
+ 		<div class="nav">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="register.html">Register</a></li>
+		</ul>
+		</div>
+ 		<h4>Sistem Penilaian Kendiri<br>Format: Soalan MCQ/TF</h4>
+		<h1>Kuiz Kimia<br>Tingkatan 4</h1>
+	</div>
+ 	<div class="container-login-register">
+ 		<form method="post" autocomplete="off">
+ 			<h2>PENDAFTARAN BAHARU</h2>
+ 			<div class="insert-LR">
+				<div class="icon-LR">
+					<div class="IC-user-LR"></div>
+					<div class="IC-long-LR"></div>
+					<div class="IC-short-LR"></div>
+				</div>
+				<div class="info-LR">
+					<input type="text" name="nama" placeholder="Nama Penuh Anda" required >
+				</div>
+			</div>
+			<br>
+			<div class="insert-LR">
+				<div class="icon-LR">
+					<div class="user-LR"></div>
+				</div>
+				<div class="info-LR">
+					<input type="text" name="id_pengguna" placeholder="No. KP tanpa tanda -" maxlength="12" size="25" onkeypress="return event.charCode >= 48 && event.charCode <=57" required autofocus>
+				</div>
+			</div>
+			<br>
+			<div class="insert-LR">
+				<div class="icon-LR">
+					<div class="lock-LR"></div>
+				</div>
+				<div class="info-LR">
+					<input type="password" id="password" name="password" placeholder="password" maxlength="10"
+						onkeypress="return event.charCode >= 48 && event.charCode <=57" required>
+				</div>
+				<div class="toggle-pass" id="togglePassword">
+					<div class="eye-LR"></div>
+				</div>
+				<script src="js/app.js"></script>
+				<script type="text/javascript">
+					const togglePassword = document.querySelector('#togglePassword');
+					const password = document.querySelector('#password');
+					togglePassword.addEventListener('click', function (e) {
+					 // toggle the type attribute
+					const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+					password.setAttribute('type', type);
+					// toggle the eye / eye slash icon
+					this.classList.toggle('eye-color');
+					});
+				</script>		
+			</div>
+			<br>
+			<div class="insert-LR">
+				<div class="icon-LR">
+					<div class="gender-LR"></div>
+				</div>
+				<div class="info-LR">
+					<select name="jantina">
+						<option value="" id="gender">~Jantina~</option>
+			    		<option value="LELAKI">Lelaki</option>
+			    		<option value="PEREMPUAN">Perempuan</option>
+			    		<option value="RTS">Rahsia</option>
+					</select>
+				</div>
+			</div>
+			<div class="no-acc">
+				<p>*Pastikan maklumat anda betul sebelum membuat pendaftaran</p>
+			</div>
+			<div class="submit-LR">
+				<input type="submit" value="Daftar">
+				<input type="reset" value="Reset">
+			</div>
+ 		</form>
+ 	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+/*List Soalan Terkini*/
+.middle-ST{
+	text-align: center;
+}
+.container-ST{
+	background-color: #e6e6ff;
+	width: auto;
+	height: auto;
+	padding: 20px;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+.display-ST{
+	display: inline-flex;
+	vertical-align: middle;
+	justify-content: center;
+	align-items: center;
+}
+.box-ST{
+	width: 250px;
+	height: 150px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin-bottom: 20px;
+}
+.content-ST{
+	background-image: linear-gradient(to top right, #B993D6, #8CA6DB);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	color: #404040;
+	border-image: linear-gradient(to top right, #B993D6, #8CA6DB);
+	width: 220px;
+	height: 120px;
+	margin: 5px;
+	border-radius: 8px;
+	transition: .3s;
+}
+.content-ST:hover{
+	width: 250px;
+	height: 150px;
+	margin: 0;
+	cursor: pointer;
+	transition: .3s;
+}
+.round-ST{
+	border: 1px solid #404040;
+	border-radius: 50%;
+	margin: 4px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+.title-ST{
+	text-align: center;
+	padding: auto;	
+}
+.description-ST{
+	display: none;
+	text-align: center;
+	font-size: 0.8rem;
+}
+.content-ST:hover .description-ST{
+	display: block;
+	.transition: 3s;
+}
